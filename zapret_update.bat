@@ -10,7 +10,7 @@ set NEW_VERSION=%~1
 
 if not defined NEW_VERSION (
     :: Check local file
-    set "VERSION_FILE=check_updates.bat"
+    set "VERSION_FILE=service.bat"
     if not exist "!VERSION_FILE!" (
         echo Error: file !VERSION_FILE! not found
         exit /b 1
